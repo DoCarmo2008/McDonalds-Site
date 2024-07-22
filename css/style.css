@@ -58,7 +58,8 @@ header {
     display: inline-flex;
 }
 
-.nav-externs-links nav ul, .nav-intern-links nav ul {
+.nav-externs-links nav ul,
+.nav-intern-links nav ul {
     list-style-type: none;
     display: flex;
 }
@@ -103,6 +104,7 @@ header {
     padding: .5rem .75rem;
     padding-right: 0;
 }
+
 .order-button a img {
     max-height: 30px;
     margin-right: 10px;
@@ -111,7 +113,8 @@ header {
 .order-button a {
     font-size: 1rem;
     text-decoration: none;
-    color: rgba(0, 0, 0, .7);;
+    color: rgba(0, 0, 0, .7);
+    ;
     display: inline-flex;
     text-align: center;
     align-items: center;
@@ -144,7 +147,7 @@ header {
 .img-text {
     position: absolute;
     right: 10%;
-    color: #292929; 
+    color: #292929;
     text-align: right;
     top: 0;
     height: calc(100% - 100px);
@@ -191,15 +194,15 @@ header {
 }
 
 .news-mc {
-    border:  1px solid #e1e1e1;
+    border: 1px solid #e1e1e1;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .07);
     border-radius: 6px;
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: calc(50% - 20px); 
-    margin: 10px; 
+    width: calc(50% - 20px);
+    margin: 10px;
 }
 
 .news-div-img {
@@ -222,7 +225,7 @@ header {
     font-family: Speedee-Bold;
 }
 
-.news-div-text p{
+.news-div-text p {
     font-size: 16px;
     color: #292929;
     margin-top: 10px;
@@ -231,7 +234,7 @@ header {
 
 .news-div-text a {
     background-color: #ffbc0d;
-    color:#292929;
+    color: #292929;
     border: none;
     height: 48px;
     min-width: 114px;
@@ -240,5 +243,15 @@ header {
     text-align: center;
     text-decoration: none;
     border-radius: 4px;
+}
+
+.news-div-text a:hover {
+    background-color: #c08b00;
+}
+
+.text-link {
+    display: flex;
     align-items: center;
+    flex-direction: column;
+
 }
