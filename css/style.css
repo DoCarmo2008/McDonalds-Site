@@ -185,9 +185,60 @@ header {
 
 .novidades-layout {
     padding: 0 10%;
+    padding-top: 40px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .news-mc {
-    
+    border:  1px solid #e1e1e1;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .07);
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(50% - 20px); 
+    margin: 10px; 
+}
+
+.news-div-img {
+    display: block;
+    width: 100%;
+}
+
+
+.news-div-img img {
+    width: 100%;
+}
+
+.news-div-text {
+    padding: 30px;
+
+}
+
+.news-div-text h4 {
+    font-size: 24px;
+    font-family: Speedee-Bold;
+}
+
+.news-div-text p{
+    font-size: 16px;
+    color: #292929;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.news-div-text a {
+    background-color: #ffbc0d;
+    color:#292929;
+    border: none;
+    height: 48px;
+    min-width: 114px;
+    padding: 14px 30px;
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    align-items: center;
 }
