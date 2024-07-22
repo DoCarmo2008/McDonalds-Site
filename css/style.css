@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* FONTS - TAKEN IN THE OFFICIAL MAKE DONALD'S WEBSITE */
+@font-face {
+    font-family: Speedee-Regular;
+    src: url("../fonts/Speedee_A_Rg.783d9e1.ttf");
+}
+
+@font-face {
+    font-family: Speedee-Bold;
+    src: url("../fonts/Speedee_A_Bd.2be351e.ttf");
+}
+
+
+/* PAGE'S CONFIGS */
+body {
+    font-family: Speedee-Regular;
+    overflow-x: hidden;
+}
+
+
+/*  HEADER ELEMENT'S CONFIGS */
+header {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0em 0em 0.6em rgba(0, 0, 0, 0.13);
+    background-color: white;
+    z-index: 1000;
+}
+
+.header-org {
+    padding: 0 10%;
+    display: inline-flex;
+}
+
+.brand_logo {
+    display: inline-flex;
+    height: 100%;
+}
+
+.brand_logo a {
+    margin-right: 10px;
+}
+
+.nav-externs-links {
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav-intern-links {
+    display: inline-flex;
+}
+
+.nav-externs-links nav ul, .nav-intern-links nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-externs-links nav ul li a {
+    color: #606060;
+    font-size: 14px;
+    text-decoration: none;
+    padding: .5rem .75rem;
+}
+
+.nav-intern-links nav ul li a {
+    color: #292929;
+    font-size: 18px;
+    text-decoration: none;
+    padding: .5rem .75rem;
+
+}
+
+.contact-links {
+    margin-right: 100px;
+}
+
+.app-links {
+    margin-left: 100px;
+}
+
+.app-links a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #606060;
+    font-size: 14px;
+    padding: .5rem .75rem;}
+
+.app-links a img {
+    margin-right: 10px;
+    max-height: 30px;
+}
+
+.order-button {
+    padding: .5rem .75rem;
+    padding-right: 0;
+}
+.order-button a img {
+    max-height: 30px;
+    margin-right: 10px;
+}
+
+.order-button a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .7);;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    background-color: #ffbc0d;
+    height: 48px;
+    min-width: 114px;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.order-button a:hover {
+    background-color: #c08b00;
+}
+
+
+
+
+/* MAIN ELEMENT'S CONFIG */
+.first-itens-shown {
+    position: relative;
+    padding-top: 100px;
+}
+
+.img-propaganda img {
+    width: 100%;
+}
+
+.img-text {
+    position: absolute;
+    right: 10%;
+    color: #292929; 
+    text-align: right;
+}
+
+.img-text h1 {
+    font-family: Speedee-Bold;
+    font-size: 74px;
+    margin-bottom: 13px;
+}
