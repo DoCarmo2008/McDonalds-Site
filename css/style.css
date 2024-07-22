@@ -50,6 +50,8 @@ header {
 .nav-externs-links {
     display: inline-flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .nav-intern-links {
@@ -77,12 +79,9 @@ header {
     white-space: nowrap;
 }
 
-.contact-links {
-    margin-right: 100px;
-}
-
-.app-links {
-    margin-left: 100px;
+.final-extern {
+    display: inline-flex;
+    align-items: center;
 }
 
 .app-links a {
@@ -91,7 +90,9 @@ header {
     text-decoration: none;
     color: #606060;
     font-size: 14px;
-    padding: .5rem .75rem;}
+    padding: .5rem .75rem;
+    white-space: nowrap;
+}
 
 .app-links a img {
     margin-right: 10px;
@@ -120,6 +121,7 @@ header {
     cursor: pointer;
     padding: 20px;
     border-radius: 4px;
+    white-space: nowrap;
 }
 
 .order-button a:hover {
@@ -135,7 +137,7 @@ header {
     padding-top: 100px;
 }
 
-.img-propaganda img {
+.first-itens-shown img {
     width: 100%;
 }
 
@@ -144,10 +146,48 @@ header {
     right: 10%;
     color: #292929; 
     text-align: right;
+    top: 0;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .img-text h1 {
     font-family: Speedee-Bold;
-    font-size: 74px;
+    font-size: 54px;
     margin-bottom: 13px;
+}
+
+.img-text p {
+    font-size: 16px;
+    margin-bottom: 18px;
+    color: #292929;
+}
+
+.img-text a {
+    text-decoration: none;
+    color: #292929;
+    background-color: white;
+    height: 48px;
+    min-width: 114px;
+    padding: 14px 30px;
+    border-radius: 4px;
+}
+
+
+
+
+.novidades-config {
+    width: 100%;
+}
+
+.novidades-layout {
+    padding: 0 10%;
+    display: flex;
+}
+
+.news-mc {
+    
 }
