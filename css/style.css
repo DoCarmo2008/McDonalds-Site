@@ -66,6 +66,7 @@ header {
     font-size: 14px;
     text-decoration: none;
     padding: .5rem .75rem;
+    white-space: nowrap;
 }
 
 .nav-intern-links nav ul li a {
@@ -73,7 +74,7 @@ header {
     font-size: 18px;
     text-decoration: none;
     padding: .5rem .75rem;
-
+    white-space: nowrap;
 }
 
 .contact-links {
