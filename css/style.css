@@ -327,3 +327,60 @@ header {
 .fun-a a:hover {
     background-color:#c08b00;
 }
+
+/* FOOTER ELEMENTS'S CONFIG*/
+footer {
+    width: 100%;
+}
+
+.footer-header {
+    background-color: #ffbc0d;
+    padding: 0 10%;
+}
+
+.header-f-lyt {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-f {
+    display: flex;  
+    align-items: center;
+}
+
+.img-f img {
+    margin-right: 30px;
+}
+
+.text-f {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.text-f p {
+    color: #292929;
+    font-size: 16px;
+}
+
+.text-f h2 {
+    font-family: Speedee-bold;
+    font-size: 36px;
+    color: #292929;
+}
+
+
+.button-f a {
+    background-color: white;
+    text-decoration: none;
+    color: #292929;
+    padding: 14px 30px;
+    white-space: nowrap;
+    height: 48px;
+    min-width: 114px;
+    border-radius: 6px;
+}
+
+
+
