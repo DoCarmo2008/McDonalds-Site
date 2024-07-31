@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* FONTS - TAKEN IN THE OFFICIAL MAKE DONALD'S WEBSITE */
+@font-face {
+    font-family: Speedee-Regular;
+    src: url("../fonts/Speedee_A_Rg.783d9e1.ttf");
+}
+
+@font-face {
+    font-family: Speedee-Bold;
+    src: url("../fonts/Speedee_A_Bd.2be351e.ttf");
+}
+
+
+/* PAGE'S CONFIGS */
+body {
+    font-family: Speedee-Regular;
+    overflow-x: hidden;
+}
+
+
+/*  HEADER ELEMENT'S CONFIGS */
+header {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0em 0em 0.6em rgba(0, 0, 0, 0.13);
+    background-color: white;
+    z-index: 1000;
+    top: 0;
+}
+
+.header-org {
+    padding: 0 10%;
+    display: inline-flex;
+}
+
+.brand_logo {
+    display: inline-flex;
+    height: 100%;
+}
+
+.brand_logo a {
+    margin-right: 10px;
+}
+
+.nav-externs-links {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-intern-links {
+    display: inline-flex;
+}
+
+.nav-externs-links nav ul,
+.nav-intern-links nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-externs-links nav ul li a {
+    color: #606060;
+    font-size: 14px;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    white-space: nowrap;
+}
+
+.nav-intern-links nav ul li a {
+    color: #292929;
+    font-size: 18px;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    white-space: nowrap;
+}
+
+.final-extern {
+    display: inline-flex;
+    align-items: center;
+}
+
+.app-links a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #606060;
+    font-size: 14px;
+    padding: .5rem .75rem;
+    white-space: nowrap;
+}
+
+.app-links a img {
+    margin-right: 10px;
+    max-height: 30px;
+}
+
+.order-button {
+    padding: .5rem .75rem;
+    padding-right: 0;
+}
+
+.order-button a img {
+    max-height: 30px;
+    margin-right: 10px;
+}
+
+.order-button a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .7);
+    ;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    background-color: #ffbc0d;
+    height: 48px;
+    min-width: 114px;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.order-button a:hover {
+    background-color: #c08b00;
+}
+
+
+
+/* MAIN CONFIGS */
+.mcdonalds-app {
+    margin:120px 10% 40px;
+}
+
+.mcapp-lyt{
+    position: relative;
+}
+
+.mcapp-lyt img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.mcapp-text {
+    position: absolute;  
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 41%;
+    height: calc(100% - 50px);
+    left: 50px;
+    right: 50%;
+}
+
+.mcapp-text h1 {
+    font-family: Speedee-Bold;
+    font-size: 54px;
+    margin-bottom: 13px;
+}
+
+
+.apps-download {
+    padding: 0px 10% 80px;
+    display: flex;
+}
+
+.and-ios-stores {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .07);
+    border-radius: 6px;
+    padding: 1.25rem;
+    justify-content: space-between;
+}
+.img-aios {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.img-aios img {
+    width: 100%;
+    height: 100%;
+}
+
+.download-btt {
+    text-align: center;
+    align-items: center;
+}
+
+.download-btt a{
+    margin: 15px auto;
+    color: #292929;
+    background-color: #ffbc0d;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 6px;
+    height: 48px;
+    min-width: 114px;
+}
