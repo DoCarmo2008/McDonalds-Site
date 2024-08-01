@@ -215,6 +215,10 @@ header {
     min-width: 114px;
 }
 
+.download-btt a:hover{
+    background-color: #c08b00;
+}
+
 
 /* FOOTER CONFIGS */
 
@@ -286,7 +290,7 @@ footer {
 }
 
 .twitter svg:hover {
-    fill: goldenrod;
+    fill: #40bee2;
     transition: 0.5s;
 }
 
@@ -307,6 +311,7 @@ footer {
 
 .download-app div {
     padding: .25rem;
+    cursor: pointer;
 }
 
 .download-app div img {
