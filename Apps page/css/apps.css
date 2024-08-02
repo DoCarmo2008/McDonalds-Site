@@ -96,9 +96,10 @@ header {
     white-space: nowrap;
 }
 
-.app-links a img {
+.app-links a i {
     margin-right: 10px;
-    max-height: 30px;
+    font-size: 1rem;
+    color: #292929;
 }
 
 .order-button {
