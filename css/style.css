@@ -744,16 +744,16 @@ footer {
         justify-content: center;
     }
 
-    
+
 
 
     /* FOOTER */
-    .text-f h2{
+    .text-f h2 {
         font-size: 24px;
         margin-bottom: 10px;
     }
 
-    .text-f p{
+    .text-f p {
         font-size: 12px;
     }
 
@@ -775,20 +775,55 @@ footer {
         height: 50px;
     }
 
-    .text-f h2{
+    .text-f h2 {
         font-size: 18px;
         margin-bottom: 10px;
     }
 
-    .text-f p{
-        font-size: 8px;
+    .text-f p {
+        font-size: 10px;
     }
 
     .button-f {
         margin-left: 10px;
     }
+
     .button-f a {
         font-size: 10px;
+    }
+
+    .direction-link {
+        padding: .75rem;
+        margin: 0;
+    }
+
+    .nav-footer-links nav ul li a {
+        font-size: 12px;
+    }
+
+    .footer-links-ly {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .socialm-lyt {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .download-app div img {
+        width: 100%;
+        height: auto;
+    }
+
+    .last-content {
+        padding: 0 20px;
+    }
+
+    .last-lyt {
+        font-size: 12px;
+        white-space: nowrap;
     }
 }
 
