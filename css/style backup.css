@@ -33,6 +33,8 @@ header {
     z-index: 99;
 }
 
+
+
 .header-org {
     padding: 0 10%;
     display: inline-flex;
@@ -141,7 +143,10 @@ header {
     display: none;
 }
 
-
+.mac-links a:hover {
+    border-bottom: 3px solid #ffbc0d;
+    transition: 0.2s;
+}
 
 
 /* MAIN ELEMENT'S CONFIG */
@@ -443,6 +448,11 @@ footer {
 .nav-footer-links nav ul li a {
     text-decoration: none;
     color: #6f6f6f;
+    
+}
+.nav-footer-links nav ul li a:hover {
+    text-decoration: underline;
+    
 }
 
 
@@ -708,6 +718,7 @@ footer {
 
     .main-img {
         content: url('../imgs/novidades/responsivity/592_3_1_banner_home_320x480_2662390fac.png');
+
     }
 
     .img-text {
@@ -727,21 +738,107 @@ footer {
         font-size: 14px;
     }
 
+    .func-layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .funct-div {
+        width: 100%;
+    }
+
+    .footer-links-ly {
+        padding: 0 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
 
     /* FOOTER */
-
-    .text-f h2{
+    .text-f h2 {
         font-size: 24px;
         margin-bottom: 10px;
     }
 
-    .text-f p{
-        font-size: 14px;
+    .text-f p {
+        font-size: 12px;
     }
 
 
+}
 
+@media (max-width: 425px) {
+    .novidades-layout {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .news-mc {
+        width: 100%;
+    }
+
+    .img-f img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .text-f h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .text-f p {
+        font-size: 10px;
+    }
+
+    .button-f {
+        margin-left: 10px;
+    }
+
+    .button-f a {
+        font-size: 10px;
+    }
+
+    .direction-link {
+        padding: .75rem;
+        margin: 0;
+    }
+
+    .nav-footer-links nav ul li a {
+        font-size: 12px;
+    }
+
+    .footer-links-ly {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links-lyt {
+        margin: 0 10%;
+    }
+
+    .socialm-lyt {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .download-app div img {
+        width: 100%;
+        height: auto;
+    }
+
+    .last-content {
+        padding: 0 20px;
+    }
+
+    .last-lyt {
+        font-size: 12px;
+        white-space: nowrap;
+    }
 }
 
 
