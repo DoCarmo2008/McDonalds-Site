@@ -791,11 +791,12 @@ footer {
 @media (max-width: 425px) {
     .novidades-layout {
         flex-direction: column;
-        text-align: center;
     }
 
     .news-mc {
         width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
     }
 
     .img-f img {
@@ -821,7 +822,7 @@ footer {
     }
 
     .direction-link {
-        padding: .75rem;
+        padding: 0;
         margin: 0;
     }
 
@@ -833,10 +834,11 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 0 10px;
     }
 
     .links-lyt {
-        margin: 0 10%;
+        gap: 10px;
     }
 
     .socialm-lyt {
@@ -850,7 +852,12 @@ footer {
     }
 
     .last-content {
-        padding: 0 20px;
+        padding: 0 5px;
+        width: 90%;
+    }
+
+    .link-privaticity nav ul li a, .copy-text {
+        font-size: 10px ;
     }
 
     .last-lyt {
