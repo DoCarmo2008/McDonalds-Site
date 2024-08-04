@@ -580,7 +580,7 @@ footer {
     .sidebar {
         position: fixed;
         top: 0;
-        display: none;
+        display: none; /* Display flex when click on menu svg */
         z-index: 1000;
         width: 100%;
         height: 100%;
@@ -629,6 +629,43 @@ footer {
 
     }
 
+    .intern-links nav ul li {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cardapio-list, .quemsomos-list, .familia-list{
+        display: none; /* Change to flex when animation is on */
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cardapio-list nav ul, .quemsomos-list nav ul, .familia-list nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .all-cardapio {
+        text-decoration: none;
+        color: #292929;
+        border: 1px solid #dbdbdb;
+        border-radius: 4px;
+        padding: 14px 30px;
+        height: 44px;
+        box-shadow: 0 2px 4px 0 #d6d6d6;
+        width: 144px;
+        text-align: center;
+    }
+
+    .cardapio-list nav ul li a, .quemsomos-list nav ul li a, .familia-list nav ul li a{
+        text-decoration: none;
+        color: #292929;
+        font-size: 12px;
+
+    }
+
     .intern-links nav {
         border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     }
@@ -651,8 +688,6 @@ footer {
         color: rgb(41, 41, 41);
         text-decoration: none;
     }
-
-
 
     .extern-links {
         display: flex;
