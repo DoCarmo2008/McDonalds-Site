@@ -635,13 +635,14 @@ footer {
         gap: 20px;
     }
 
-    .cardapio-list, .quemsomos-list, .familia-list{
+    .cardapio-list, .quemsomos-list, .familia-list, .promocoes-list, .pravc-list, .mcdia-list{
         display: none; /* Change to flex when animation is on */
         flex-direction: column;
         gap: 15px;
+        margin-bottom: 10px;
     }
 
-    .cardapio-list nav ul, .quemsomos-list nav ul, .familia-list nav ul{
+    .cardapio-list nav ul, .quemsomos-list nav ul, .familia-list nav ul, .promocoes-list nav ul, .pravc-list nav ul, .mcdia-list nav ul{
         display: flex;
         flex-direction: column;
         gap: 12px;
@@ -659,7 +660,7 @@ footer {
         text-align: center;
     }
 
-    .cardapio-list nav ul li a, .quemsomos-list nav ul li a, .familia-list nav ul li a{
+    .cardapio-list nav ul li a, .quemsomos-list nav ul li a, .familia-list nav ul li a, .promocoes-list nav ul li a, .pravc-list nav ul li a, .mcdia-list nav ul li a{
         text-decoration: none;
         color: #292929;
         font-size: 12px;

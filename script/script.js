@@ -10,10 +10,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const mais = document.querySelector('.mais-i');
     const mais2 = document.querySelector('.mais-i2');
     const mais3 = document.querySelector('.mais-i3');
+    const mais4 = document.querySelector('.mais-i4');
+    const mais5 = document.querySelector('.mais-i5');
+    const mais6 = document.querySelector('.mais-i6');
     const quemSomos = document.querySelector('.quemsomos');
     const quemSomosList = document.querySelector('.quemsomos-list');
     const familia = document.querySelector('.familia');
     const familiaList = document.querySelector('.familia-list');
+    const promocoes = document.querySelector('.promocoes');
+    const promocoesList = document.querySelector('.promocoes-list');
+    const paraVoceList = document.querySelector('.pravc-list');
+    const paraVoce = document.querySelector('.mcpravc');
+    const mcDiaList = document.querySelector('.mcdia-list');
+    const mcDia = document.querySelector('.mcdia');
 
 
     //Cheddar Animation
@@ -75,7 +84,41 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
     
+    promocoes.addEventListener('click', () => {
+        if(promocoesList.style.display == 'none') {
+            promocoesList.style.display = 'flex';
+            mais4.classList.add('bi-arrow-left');
+            mais4.classList.remove('bi-plus');
+        } else {
+            promocoesList.style.display = 'none';
+            mais4.classList.add('bi-plus');
+            mais4.classList.remove('bi-arrow-left');
+        }
+    });
 
+    paraVoce.addEventListener('click', () => {
+        if(paraVoceList.style.display == 'none') {
+            paraVoceList.style.display = 'flex';
+            mais5.classList.add('bi-arrow-left');
+            mais5.classList.remove('bi-plus');
+        } else {
+            paraVoceList.style.display = 'none';
+            mais5.classList.add('bi-plus');
+            mais5.classList.remove('bi-arrow-left');
+        }
+    });
+
+    mcDia.addEventListener('click', () => {
+        if(mcDiaList.style.display == 'none') {
+            mcDiaList.style.display = 'flex';
+            mais6.classList.add('bi-arrow-left');
+            mais6.classList.remove('bi-plus');
+        } else {
+            mcDiaList.style.display = 'none';
+            mais6.classList.add('bi-plus');
+            mais6.classList.remove('bi-arrow-left');
+        }
+    })
 });
 
 
