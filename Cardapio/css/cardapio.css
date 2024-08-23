@@ -1,0 +1,649 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* FONTS - TAKEN IN THE OFFICIAL MAKE DONALD'S WEBSITE */
+@font-face {
+    font-family: Speedee-Regular;
+    src: url("/fonts/Speedee_A_Rg.783d9e1.ttf");
+}
+
+@font-face {
+    font-family: Speedee-Bold;
+    src: url("/fonts/Speedee_A_Bd.2be351e.ttf");
+}
+
+
+/* PAGE'S CONFIGS */
+body {
+    font-family: Speedee-Regular;
+    overflow-x: hidden;
+}
+
+
+/*  HEADER ELEMENT'S CONFIGS */
+header {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0em 0em 0.6em rgba(0, 0, 0, 0.13);
+    background-color: white;
+    z-index: 99;
+}
+
+
+
+.header-org {
+    padding: 0 10%;
+    display: inline-flex;
+}
+
+.sidebar {
+    display: none;
+}
+
+.brand_logo {
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+}
+
+.brand_logo a {
+    margin-right: 10px;
+}
+
+.nav-externs-links {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-intern-links {
+    display: inline-flex;
+}
+
+.nav-externs-links nav ul,
+.nav-intern-links nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-externs-links nav ul li a {
+    color: #606060;
+    font-size: 14px;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    white-space: nowrap;
+}
+
+.nav-externs-links nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.nav-intern-links nav ul li a {
+    color: #292929;
+    font-size: 18px;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    white-space: nowrap;
+}
+
+.final-extern {
+    display: inline-flex;
+    align-items: center;
+}
+
+.app-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #606060;
+    font-size: 14px;
+    padding: .5rem .75rem;
+    white-space: nowrap;
+}
+
+.app-links a i {
+    margin-right: 10px;
+    font-size: 1rem;
+    color: #292929;
+}
+
+.order-button {
+    padding: .5rem .75rem;
+    padding-right: 0;
+}
+
+.order-button a img {
+    max-height: 30px;
+    margin-right: 10px;
+}
+
+.order-button a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .7);
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    background-color: #ffbc0d;
+    height: 48px;
+    min-width: 114px;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.order-button a:hover {
+    background-color: #c08b00;
+}
+
+.menu-svg i {
+    display: none;
+}
+
+.mac-links a:hover {
+    border-bottom: 3px solid #ffbc0d;
+    transition: 0.2s;
+}
+
+.mac-links:nth-child(1) a {
+    border-bottom: 3px solid #ffbc0d;
+}
+
+
+/* MAIN ELEMENTS CONFIGS */
+.list-organizations {
+    display: flex;
+    padding: 120px 10% 0;
+}
+
+.sidelist {
+    display: flex;
+    flex-direction: column;
+}
+
+.products-org, .other-products ul {
+    display: flex;
+    align-items: center;
+    border: 2px solid #e1e1e1;
+    border-radius: 6px;
+    font-size: 18px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .07);    
+}
+
+.products-org img, .card-order img {
+    height: auto;
+    width: 75px;
+    max-height: 100%;
+    margin-left: 6px;
+    margin-right: 12px;
+}
+
+.our-products {
+    margin-bottom: 30px;
+}
+
+.div-selected {
+    border-left: 6px solid #ffbc0d;
+}
+
+.products-org a {
+    font-family: Speedee-Bold;
+    text-decoration: none;
+    color: #292929;
+    margin-right: 20px;
+}
+
+.other-products ul{
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+
+.other-products ul li {
+    padding: 15px 0;
+}
+
+.other-products ul li, .other-products ul li a{
+    text-decoration: none;
+    color: #292929;
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+
+
+
+
+
+/* FOOTER ELEMENTS'S CONFIG*/
+footer {
+    width: 100%;
+}
+
+.footer-header {
+    background-color: #ffbc0d;
+    padding: 0 10%;
+}
+
+.header-f-lyt {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-f {
+    display: flex;
+    align-items: center;
+}
+
+.img-f img {
+    margin-right: 30px;
+}
+
+.text-f {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.text-f p {
+    color: #292929;
+    font-size: 16px;
+}
+
+.text-f h2 {
+    font-family: Speedee-bold;
+    font-size: 36px;
+    color: #292929;
+}
+
+
+.button-f a {
+    background-color: white;
+    text-decoration: none;
+    color: #292929;
+    padding: 14px 30px;
+    white-space: nowrap;
+    height: 48px;
+    min-width: 114px;
+    border-radius: 6px;
+}
+
+.button-f a:hover {
+    background-color: rgb(209, 209, 209);
+
+}
+
+.molho-style {
+    padding: 0 10%;
+
+}
+
+.sem-derramar {
+    visibility: hidden;
+    margin-top: -20px;
+}
+
+.derramando {
+    visibility: visible;
+}
+
+
+.footer-links-ly {
+    padding: 0 10%;
+    margin: 15px 0;
+}
+
+.links-lyt {
+    display: flex;
+    color: #292929;
+}
+
+.direction-link {
+    padding: .75rem;
+    margin-right: 16px;
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+.link-title {
+    padding-bottom: 1rem;
+}
+
+.nav-footer-links nav ul li {
+    list-style-type: none;
+    padding: .30rem 0;
+}
+
+.nav-footer-links nav ul li a {
+    text-decoration: none;
+    color: #6f6f6f;
+
+}
+
+.nav-footer-links nav ul li a:hover {
+    text-decoration: underline;
+
+}
+
+
+/* Social Medias Layout */
+.social-medias {
+    padding: 0 10%;
+    margin-bottom: 1.6rem;
+}
+
+.socialm-lyt {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, .08);
+}
+
+.social-medias-links {
+    display: flex;
+}
+
+.social-medias-links div {
+    padding: .75rem;
+}
+
+.facebook svg:hover {
+    fill: blue;
+    transition: 0.5s;
+}
+
+.twitter svg:hover {
+    fill: goldenrod;
+    transition: 0.5s;
+}
+
+.instagram svg:hover {
+    fill: palevioletred;
+    transition: 0.5s;
+}
+
+.youtube svg:hover {
+    fill: red;
+    transition: 0.5s;
+}
+
+
+.download-app {
+    display: flex;
+}
+
+.download-app div {
+    padding: .25rem;
+}
+
+.download-app div img {
+    width: auto;
+    height: 40px;
+}
+
+/* Last content */
+.last-content {
+    padding: 0 10%;
+}
+
+.last-lyt {
+    display: flex;
+    justify-content: space-between;
+    color: #606060;
+}
+
+.link-privaticity nav ul {
+    display: flex;
+}
+
+.link-privaticity nav ul li {
+    list-style-type: none;
+    padding: .25rem;
+}
+
+
+.link-privaticity nav ul li a {
+    text-decoration: none;
+    color: #292929;
+}
+
+.copyrigthh {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.copy-img {
+    margin-right: 5px;
+}
+
+.copy-img img {
+    height: 30px;
+    width: auto;
+}
+
+
+
+
+
+
+/* RESPONSIVITY */
+
+/* Resposivity for 768px devices */
+@media (max-width: 768px) {
+
+
+    /* SIDEBAR */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        display: none;
+        /* Display flex when click on menu svg */
+        z-index: 1000;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .sidebar-header {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+    }
+
+    .close-svg {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .mc-logo {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+
+    }
+
+    .close-svg i,
+    .link-internos i {
+        color: #292929;
+        font-size: 1.5rem;
+    }
+
+    .mc-logo a img {
+        width: 43px;
+        height: 38px;
+    }
+
+
+    .intern-links {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 18px 10px 68px;
+
+    }
+
+    .intern-links nav ul li {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cardapio-list,
+    .quemsomos-list,
+    .familia-list,
+    .promocoes-list,
+    .pravc-list,
+    .mcdia-list {
+        display: none;
+        /* Change to flex when animation is on */
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+
+    .cardapio-list nav ul,
+    .quemsomos-list nav ul,
+    .familia-list nav ul,
+    .promocoes-list nav ul,
+    .pravc-list nav ul,
+    .mcdia-list nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .all-cardapio {
+        text-decoration: none;
+        color: #292929;
+        border: 1px solid #dbdbdb;
+        border-radius: 4px;
+        padding: 14px 30px;
+        height: 44px;
+        box-shadow: 0 2px 4px 0 #d6d6d6;
+        width: 144px;
+        text-align: center;
+    }
+
+    .cardapio-list nav ul li a,
+    .quemsomos-list nav ul li a,
+    .familia-list nav ul li a,
+    .promocoes-list nav ul li a,
+    .pravc-list nav ul li a,
+    .mcdia-list nav ul li a {
+        text-decoration: none;
+        color: #292929;
+        font-size: 12px;
+
+    }
+
+    .intern-links nav {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .intern-links nav ul li,
+    .extern-links nav ul li {
+        list-style-type: none;
+        font-size: 14px;
+    }
+
+
+    .link-internos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    .link-internos a {
+        color: rgb(41, 41, 41);
+        text-decoration: none;
+    }
+
+    .extern-links {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 18px 10px 68px;
+
+    }
+
+    .mclinks {
+        padding: 10px 0;
+    }
+
+    .mclinks img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .mclinks a {
+        color: #606060;
+        text-decoration: none;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    /* HEADER */
+
+    .header-org {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2%;
+    }
+
+    .brand_logo img {
+        width: 43px;
+        height: 38px;
+    }
+
+    .menu-svg i {
+        color: black;
+        font-size: 1.5rem;
+        display: block;
+    }
+
+    .contact-links,
+    .app-links {
+        display: none;
+    }
+
+    .order-button {
+        display: block;
+    }
+
+    .order-button a {
+        padding: 5px;
+        height: 33px;
+        font-size: 14px;
+    }
+
+    .order-button a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav-intern-links {
+        display: none;
+    }
+
+    .molho-style {
+        display: none;
+    }
+}
