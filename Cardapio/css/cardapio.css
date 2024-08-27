@@ -184,19 +184,13 @@ header {
     margin-right: 12px;
 }
 
-.our-products {
+.products-org {
     margin-bottom: 30px;
 }
 
-.div-selected {
-    border-left: 6px solid #ffbc0d;
-}
-
 .products-org a {
-    font-family: Speedee-Bold;
     text-decoration: none;
     color: #292929;
-    margin-right: 20px;
 }
 
 .other-products ul{
@@ -212,13 +206,55 @@ header {
 .other-products ul li, .other-products ul li a{
     text-decoration: none;
     color: #292929;
-    margin-right: 20px;
     list-style-type: none;
+}
+
+.card-order {
+    display: flex;
+    align-items: center;
+    width: 275px;
+    word-spacing: 1px;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.card-selected {
+    border-left: 6px solid #ffbc0d;
+    font-family: Speedee-Bold;
 }
 
 
 
+/* Main Content (2nd div) */
+.koo-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.koo-main nav ul {
+    display: flex;
+    gap: 10px;
+}
 
+.koo-main nav ul li {
+    list-style-type: none;
+
+}
+.koo-main nav ul li a {
+    font-size: 16px;
+    color: #006bae;
+
+    &.koo-nav-dfr {
+        color: #adadad;
+        text-decoration:none;
+    }
+}
+
+
+.bi-chevron-right{
+    font-size: 12px;
+    margin-left: 10px;
+}
 
 
 /* FOOTER ELEMENTS'S CONFIG*/

@@ -22,20 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const paraVoceList = document.querySelector('.pravc-list');
     const paraVoce = document.querySelector('.mcpravc');
     const mcDiaList = document.querySelector('.mcdia-list');
-    const mcDia = document.querySelector('.mcdia'); 
+    const mcDia = document.querySelector('.mcdia');
+    const tabs = document.querySelectorAll('[role="tab"]');
 
-
-    //Cheddar Animation
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                cheddar.classList.add('derramando');
-                cheddar.classList.remove('sem-derramar');
-                cheddar.style.transition = '1s';
-            }
-        });
-    });
-    observer.observe(lista);
 
 
     /* Resposivity scripts */
@@ -61,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     quemSomos.addEventListener('click', () => {
-        if(quemSomosList.style.display == 'none') {
+        if (quemSomosList.style.display == 'none') {
             quemSomosList.style.display = 'flex';
             mais2.classList.remove('bi-plus');
             mais2.classList.add('bi-arrow-left');
@@ -69,11 +58,11 @@ document.addEventListener('DOMContentLoaded', function () {
             quemSomosList.style.display = 'none';
             mais2.classList.remove('bi-arrow-left');
             mais2.classList.add('bi-plus');
-        } 
+        }
     });
 
     familia.addEventListener('click', () => {
-        if(familiaList.style.display == 'none') {
+        if (familiaList.style.display == 'none') {
             familiaList.style.display = 'flex';
             mais3.classList.add('bi-arrow-left');
             mais3.classList.remove('bi-plus');
@@ -83,9 +72,9 @@ document.addEventListener('DOMContentLoaded', function () {
             mais3.classList.remove('bi-arrow-left');
         }
     });
-    
+
     promocoes.addEventListener('click', () => {
-        if(promocoesList.style.display == 'none') {
+        if (promocoesList.style.display == 'none') {
             promocoesList.style.display = 'flex';
             mais4.classList.add('bi-arrow-left');
             mais4.classList.remove('bi-plus');
@@ -97,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     paraVoce.addEventListener('click', () => {
-        if(paraVoceList.style.display == 'none') {
+        if (paraVoceList.style.display == 'none') {
             paraVoceList.style.display = 'flex';
             mais5.classList.add('bi-arrow-left');
             mais5.classList.remove('bi-plus');
@@ -109,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     mcDia.addEventListener('click', () => {
-        if(mcDiaList.style.display == 'none') {
+        if (mcDiaList.style.display == 'none') {
             mcDiaList.style.display = 'flex';
             mais6.classList.add('bi-arrow-left');
             mais6.classList.remove('bi-plus');
@@ -118,5 +107,57 @@ document.addEventListener('DOMContentLoaded', function () {
             mais6.classList.add('bi-plus');
             mais6.classList.remove('bi-arrow-left');
         }
-    })
+    });
+
+
+  //ASIDE - CARDAPIO
+ 
+
+  document.querySelectorAll('.card-order').forEach((tabela) => {
+    tabela.addEventListener('click', function() {
+        document.querySelectorAll('.card-order').forEach((li) => {
+            li.classList.remove('card-selected');
+        });
+        this.classList.add('card-selected');
+
+        //TESTE FUNCIONANDO
+        // Bom para quando for fazer as divs de tab
+        if (this.id == "tab0") {
+            console.log(this.id);            
+        } else if(this.id == "tab1") {
+            console.log(this.id);            
+        }  else if(this.id == "tab2") {
+            console.log(this.id);
+        }  else if(this.id == "tab3") {
+            console.log(this.id);
+        } else if(this.id == "tab4") {
+            console.log(this.id);
+        } else if(this.id == "tab5") {
+            console.log(this.id);
+        } else if(this.id == "tab6") {
+            console.log(this.id);
+        } else if(this.id == "tab7") {
+            console.log(this.id);
+        } else if(this.id == "tab8") {
+            console.log(this.id);
+        } else if(this.id == "tab9") {
+            console.log(this.id);
+        } else if(this.id == "tab10") {
+            console.log(this.id);
+        } else if(this.id == "tab11") {
+            console.log(this.id);
+        } else if(this.id == "tab12") {
+            console.log(this.id);
+        } else if(this.id == "tab13") {
+            console.log(this.id);
+        } else if(this.id == "tab14") {
+            console.log(this.id);
+        } else if(this.id == "tab15") {
+            console.log(this.id);
+        }
+    }); 
+  });
 });
+
+
+
