@@ -167,16 +167,18 @@ header {
     flex-direction: column;
 }
 
-.products-org, .other-products ul {
+.products-org,
+.other-products ul {
     display: flex;
     align-items: center;
     border: 2px solid #e1e1e1;
     border-radius: 6px;
     font-size: 18px;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .07);    
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .07);
 }
 
-.products-org img, .card-order img {
+.products-org img,
+.card-order img {
     height: auto;
     width: 75px;
     max-height: 100%;
@@ -193,17 +195,18 @@ header {
     color: #292929;
 }
 
-.other-products ul{
+.other-products ul {
     align-items: flex-start;
     flex-direction: column;
-    
+
 }
 
 .other-products ul li {
     padding: 15px 0;
 }
 
-.other-products ul li, .other-products ul li a{
+.other-products ul li,
+.other-products ul li a {
     text-decoration: none;
     color: #292929;
     list-style-type: none;
@@ -231,30 +234,92 @@ header {
     flex-direction: column;
     width: 100%;
 }
+
+.koo-main-firstnav {
+    height: 92px;
+    display: flex;
+    align-items: center;
+}
+
 .koo-main nav ul {
     display: flex;
-    gap: 10px;
+    margin-left: 20px;
 }
 
 .koo-main nav ul li {
     list-style-type: none;
 
 }
+
 .koo-main nav ul li a {
     font-size: 16px;
     color: #006bae;
 
     &.koo-nav-dfr {
         color: #adadad;
-        text-decoration:none;
+        text-decoration: none;
+        margin-left: 5px;
     }
 }
 
+.main-content-koo {
+    width: 100%;
+}
 
-.bi-chevron-right{
+.central-cardapio {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardapio-header {
+    text-align: center;
+}
+
+.cardapio-header h1 {
+    font-family: Speedee-Bold;
+    font-size: 54px;
+    color: rgb(41, 41, 41);
+}
+
+.cardapio-main {
+    margin-top: 50px;
+}
+
+.bi-chevron-right {
     font-size: 12px;
     margin-left: 10px;
 }
+
+.products-ours {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+/* 
+.news {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+} */
+
+.cardapios-of-eachtopc ul li a p {
+    color: rgb(54, 54, 54);
+}
+
+.cardapios-of-eachtopc ul li a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-confg {
+    width: 213px;
+    height: 180px;
+}
+
 
 
 /* FOOTER ELEMENTS'S CONFIG*/
