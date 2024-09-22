@@ -1,7 +1,5 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-    const cheddar = document.querySelector('.molho-derramado');
-    const lista = document.querySelector('.link-title');
     const menu = document.querySelector('.menu-i');
     const sideBar = document.querySelector('.sidebar');
     const closeSidebar = document.querySelector('.close-i');
@@ -23,7 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const paraVoce = document.querySelector('.mcpravc');
     const mcDiaList = document.querySelector('.mcdia-list');
     const mcDia = document.querySelector('.mcdia');
-    const tabs = document.querySelectorAll('[role="tab"]');
+    const cardTitle = document.querySelector('.card-title');
+    const tabContent = document.querySelectorAll('.tbCont');
 
 
 
@@ -110,54 +109,66 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-  //ASIDE - CARDAPIO
- 
+    //ASIDE - CARDAPIO
+    document.querySelectorAll('.card-order').forEach((tabela) => {
+        tabela.addEventListener('click', function () {
+            document.querySelectorAll('.card-order').forEach((li) => {
+                li.classList.remove('card-selected');
+            });
+            this.classList.add('card-selected');
 
-  document.querySelectorAll('.card-order').forEach((tabela) => {
-    tabela.addEventListener('click', function() {
-        document.querySelectorAll('.card-order').forEach((li) => {
-            li.classList.remove('card-selected');
+            
+            // Quando for fazer a transição de um cardapio para o outro - Teste funcionando
+            if (this.id == "tab0") {
+                cardTitle.textContent = 'Nossos Produtos';
+                tabContent.forEach(content => {
+                    content.style.display = 'none';
+                });
+
+                document.querySelector('.products-ours').style.display = 'flex';
+
+            } else if (this.id == "tab1") {
+                cardTitle.textContent = 'Lançamentos';
+                tabContent.forEach(content => {
+                    content.style.display = 'none';
+                });
+
+                document.querySelector('.news').style.display = 'flex';
+
+            } else if (this.id == "tab2") {
+                cardTitle.textContent = 'Novos Brabos do Méqui';
+            } else if (this.id == "tab3") {
+                cardTitle.textContent = 'Sanduíche de Carne Bovina';
+            } else if (this.id == "tab4") {
+                cardTitle.textContent = 'Família Tasty';
+            } else if (this.id == "tab5") {
+                cardTitle.textContent = 'Sanduíche de Frango';
+            } else if (this.id == "tab6") {
+                cardTitle.textContent = 'McLanche Feliz';
+            } else if (this.id == "tab7") {
+                cardTitle.textContent = 'Méqui 1000';
+            } else if (this.id == "tab8") {
+                cardTitle.textContent = 'Acompanhamentos';
+            } else if (this.id == "tab9") {
+                cardTitle.textContent = 'Sobremesas';
+            } else if (this.id == "tab10") {
+                cardTitle.textContent = 'Bebidas Frias';
+            } else if (this.id == "tab11") {
+                cardTitle.textContent = 'Café da Manhã';
+            } else if (this.id == "tab12") {
+                cardTitle.textContent = 'Bebidas Quentes';
+            } else if (this.id == "tab13") {
+                cardTitle.textContent = 'McOferta';
+            } else if (this.id == "tab14") {
+                cardTitle.textContent = 'Méqui Box';
+            } else if (this.id == "tab15") {
+                cardTitle.textContent = 'McCafé';
+            }
+
         });
-        this.classList.add('card-selected');
-
-        //TESTE FUNCIONANDO
-        // Bom para quando for fazer as divs de tab
-        if (this.id == "tab0") {
-            console.log(this.id);            
-        } else if(this.id == "tab1") {
-            console.log(this.id);            
-        }  else if(this.id == "tab2") {
-            console.log(this.id);
-        }  else if(this.id == "tab3") {
-            console.log(this.id);
-        } else if(this.id == "tab4") {
-            console.log(this.id);
-        } else if(this.id == "tab5") {
-            console.log(this.id);
-        } else if(this.id == "tab6") {
-            console.log(this.id);
-        } else if(this.id == "tab7") {
-            console.log(this.id);
-        } else if(this.id == "tab8") {
-            console.log(this.id);
-        } else if(this.id == "tab9") {
-            console.log(this.id);
-        } else if(this.id == "tab10") {
-            console.log(this.id);
-        } else if(this.id == "tab11") {
-            console.log(this.id);
-        } else if(this.id == "tab12") {
-            console.log(this.id);
-        } else if(this.id == "tab13") {
-            console.log(this.id);
-        } else if(this.id == "tab14") {
-            console.log(this.id);
-        } else if(this.id == "tab15") {
-            console.log(this.id);
-        }
-    }); 
-  });
+    });
 });
+
 
 
 
